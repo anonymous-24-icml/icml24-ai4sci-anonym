@@ -65,7 +65,7 @@ Examples of some experiments that can be reproduced with XLuminA are:
 
 # 🚀 Testing XLuminA's efficiency:
 
-We evaluated our framework by conducting several tests - see [Figure 1](https://arxiv.org/abs/2310.08408#). The experiments were run on an Intel CPU Xeon Gold 6130 and Nvidia GPU Quadro RTX 6000. 
+We evaluated our framework by conducting several tests. The experiments were run on an Intel CPU Xeon Gold 6130 and Nvidia GPU Quadro RTX 6000. 
 
  (1) Average execution time (in seconds) over 100 runs, within a computational window size of $2048\times 2048$, for scalar and vectorial field propagation using Rayleigh-Sommerfeld (RS, VRS) and Chirped z-transform (CZT, VCZT) in [Diffractio](https://pypi.org/project/diffractio/) and XLuminA. Times for XLuminA reflect the run with pre-compiled jitted functions. The Python files corresponding to light propagation algorithms testing are [scalar_diffractio.py] and [vectorial_diffractio.py] for Diffractio, and [scalar_xlumina.py] and [vectorial_xlumina.py] for XLuminA. 
 
@@ -95,7 +95,7 @@ With XLuminA we were able to re-discover three foundational optics experiments:
 
 ➤ The [sharp focus of a radially polarized light beam](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.91.233901).
 
-The Python files used for the discovery of these optical setups, as detailed in [our paper](https://arxiv.org/abs/2310.08408#), are organized in pairs of `optical_table` and `optimizer` as follows:
+The Python files used for the discovery of these optical setups  are organized in pairs of `optical_table` and `optimizer` as follows:
 
 | **Experiment name** | 🔬 Optical table | 🤖 Optimizer | 📄 File for data |
 |----------------|---------------|-----------|----------|
